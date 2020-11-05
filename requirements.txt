@@ -1,7 +1,7 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: win-64
-appdirs=1.4.4=py_0
+appdirs==1.4.4=py_0
 argon2-cffi=20.1.0=py37he774522_1
 async_generator=1.10=py37h28b3542_0
 attrs=20.2.0=py_0
@@ -18,7 +18,6 @@ chardet=3.0.4=py37_1003
 click=7.1.2=py_0
 colorama=0.4.4=py_0
 console_shortcut=0.1.1=4
-cryptography=3.1.1=py37h7a1dbc1_0
 cycler=0.10.0=py_2
 decorator=4.4.2=py_0
 defusedxml=0.6.0=py_0
