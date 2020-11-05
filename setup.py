@@ -2,9 +2,11 @@ from setuptools import setup
 
 setup(
     name="Textharvester",
-    version="0.1",
-    description="A test module",
+    version="1.0",
+    description="blablabla",
+    license="None",
     author="techboy-coder",
-    packages=["Textharvester"],  # same as name
-    # external packages as dependencies
+    author_email="",
+    url="https://github.com",
+    packages=["Textharvester"],
 )
