@@ -1,33 +1,25 @@
-# Product Name
-> Short blurb about what your product does.
+# Textharvester
+> A simple tool to collect links and text data from the internet
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
-One to two paragraph statement about your product and what it does.
+TextHarvester is an easy-to-use tool for collecting and crawling urls from the Internet and downloading website content from collected urls into a text file. TextHarvester can be used to efficiently collect a lot of text for general purpose nlp.
 
 ![](header.png)
 
 ## Installation
 
-OS X & Linux:
+From Source:
 
 ```sh
-npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
+git clone https://github.com/techboy-coder/Textharvester.git
+cd Textharvester && pip install --upgrade -r requirements.txt && pip install .
 ```
 
 ## Usage example
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+In the example below, you can see how to quickly collect links from a website. The links will be saved and can be used later to download the content from each link.
+![](url-collection-example.png)
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
+_For more examples and usage, please refer to the Examples Folder._
 
 ## Development setup
 
