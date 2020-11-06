@@ -3,7 +3,7 @@
 
 TextHarvester is an easy-to-use tool for collecting and crawling urls from the Internet and downloading website content from collected urls into a text file. TextHarvester can be used to efficiently collect a lot of text for general purpose nlp.
 
-![](textharvester_logo.png)
+![](textharvester_logo.PNG)
 
 ## Installation
 
@@ -18,7 +18,7 @@ cd Textharvester && pip install --upgrade -r requirements.txt && pip install .
 
 In the example below, you can see how to quickly collect links from a website. The links will be saved and can be used later to download the content from each link.
 
-![](url-collection-example.png)
+![](url-collection-example.PNG)
 
 _For more examples and usage, please refer to the Examples Folder._
 
