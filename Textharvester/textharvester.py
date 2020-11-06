@@ -43,10 +43,10 @@ def flatten(xs):
     return result
 
 
-class LinkHarvester:
+class TextHarvester:
     def __init__(
         self,
-        starturls,
+        starturls=None,
         forcedomains=False,
         alloweddomainslist=[],
         depth=1,
