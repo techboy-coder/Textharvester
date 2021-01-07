@@ -200,7 +200,7 @@ class TextHarvester:
                         linkslist.append(i)
                         proc = "{}/{}".format(subcount, lnt)
                         try:
-                            print("{}\r  Getting...".format(proc), end="  ", sep="")
+                            print("{}\r  Getting...".format(proc))
                         except:
                             pass
                         if subcount >= limittotal:
