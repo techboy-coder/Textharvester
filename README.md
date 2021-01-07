@@ -2,7 +2,7 @@
 
 ![](textharvester_logo.PNG)
 
-> A simple tool that collects massive amounts of links and text data from the internet
+> A simple tool that collects massive amounts of links and text data from the internet.
 
 TextHarvester is an easy-to-use tool for collecting and crawling urls from the Internet and downloading website content from collected urls into a text file. TextHarvester can be used to efficiently collect a lot of text for general purpose nlp.
 
@@ -15,19 +15,9 @@ TextHarvester is a depth-first algorithm.
    2. Randomly (based on your parameters) chooses links from previous step and repeats previous step.
 2. Download Content from collected urls.
 
+**Diagram**
 
-
-```mermaid
-graph LR;
-th[Textharvester Instance]-->harv(Harvester Method)
-harv-->collected[(Collected Links)]
-th-->dl(Downloader Method)
-collected-->dl
-dl-->out[(Content from collected Links)]
-dl-->outlinks[(Final Collection of Links)]
-```
-
-
+![image-20210107134824553](C:\Users\Shivr\Desktop\Python 3\Anaconda\Python Projects from 2020\Web Data Mining\Textharvester\Textharvester\image-20210107134824553.png)
 
 ## Installation
 
