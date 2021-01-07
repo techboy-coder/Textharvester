@@ -32,7 +32,7 @@ crawler = th.TextHarvester(
     limittotal=80,
 )
 # Start Harvesting and Collecting Urls
-crawler.harvest(threads=50, write="outfile_urls.txt", overwrite=True, doreturn=False)
+crawler.harvest(threads=50, write="outfile_urls.txt")
 # > This will create a outfile_urls.txt file with all urls it has collected.
 
 ```

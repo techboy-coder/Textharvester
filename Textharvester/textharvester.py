@@ -182,7 +182,7 @@ class TextHarvester:
         try:
             for cnt in range(depth):
                 print("\n")
-                print("DEPTH CHECK: {}\r".format(cnt), end="")
+                print("RECURSIVE EXPLORATION DEPTH: {}\r".format(cnt + 1), end="")
                 print("\n")
                 lnt = len(linkslist)
                 if lnt > limittotal:
@@ -276,7 +276,7 @@ class TextHarvester:
         for cnt, i in enumerate(p.imap(webpage_miner, inlist)):
             proc = "{}/{}".format(cnt, lnt)
             try:
-                print("{}\r  Writing...".format(proc), end="  ", sep="")
+                print("\r{} Writing...".format(proc), end="  ", sep="")
             except:
                 pass
             try:
