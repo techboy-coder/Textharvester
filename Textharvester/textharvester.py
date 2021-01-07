@@ -161,7 +161,9 @@ class TextHarvester:
 
     # Main function which you will be running
 
-    def harvest(self, threads=10, write="output.txt", overwrite=True, doreturn=False):
+    def harvest(
+        self, threads=10, write="harvested_links.txt", overwrite=True, doreturn=False
+    ):
         """Main crawl function
 
         Args:
@@ -180,7 +182,7 @@ class TextHarvester:
         try:
             for cnt in range(depth):
                 print("\n")
-                print("\rDEPTH CHECK: {}".format(cnt))
+                print("DEPTH CHECK: {}\r".format(cnt), end="")
                 print("\n")
                 lnt = len(linkslist)
                 if lnt > limittotal:
@@ -200,7 +202,7 @@ class TextHarvester:
                         linkslist.append(i)
                         proc = "{}/{}".format(subcount, lnt)
                         try:
-                            print("{}\r  Getting...".format(proc))
+                            print("\r{} Harvesting...".format(proc), end="  ", sep="")
                         except:
                             pass
                         if subcount >= limittotal:
@@ -220,7 +222,7 @@ class TextHarvester:
                 random.shuffle(linkslist)
                 # print(len(linkslist))
                 print("\n")
-                print("Lenght: ", len(linkstotal))
+                print("Unique links collected till now: ", len(linkstotal))
                 # print(type(self.removepercent))
                 if not int(len(linkslist) * (1 - self.removepercent)) < 1:
                     # print(type(self.removepercent), ": ", self.removepercent)
@@ -230,7 +232,7 @@ class TextHarvester:
         except KeyboardInterrupt:
             stored_exception = sys.exc_info()
         linkstotal = self.rem_duplicate(linkstotal)
-        print("Total Length:", len(linkstotal))
+        print("Total unique links:", len(linkstotal))
         if write is not None:
             o = "w" if overwrite else "a"
             with open("{}".format(str(write)), o, buffering=20 * 6) as f:
