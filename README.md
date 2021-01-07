@@ -6,7 +6,7 @@
 
 TextHarvester is an easy-to-use tool for collecting and crawling urls from the Internet and downloading website content from collected urls into a text file. TextHarvester can be used to efficiently collect a lot of text for general purpose nlp.
 
-##How does it work?
+## How does it work?
 
 TextHarvester is a depth-first algorithm.
 
@@ -17,7 +17,7 @@ TextHarvester is a depth-first algorithm.
 
 **Diagram**
 
-![image-20210107134824553](C:\Users\Shivr\Desktop\Python 3\Anaconda\Python Projects from 2020\Web Data Mining\Textharvester\Textharvester\image-20210107134824553.png)
+![image-20210107135132263](C:\Users\Shivr\Desktop\Python 3\Anaconda\Python Projects from 2020\Web Data Mining\Textharvester\Diagram)
 
 ## Installation
 
