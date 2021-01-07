@@ -46,7 +46,7 @@ def flatten(xs):
 class TextHarvester:
     def __init__(
         self,
-        starturls=None,
+        starturls="example.com",
         forcedomains=False,
         alloweddomainslist=[],
         depth=1,
