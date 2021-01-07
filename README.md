@@ -1,7 +1,9 @@
 # Textharvester
-> A simple tool to collect links and text data from the internet
+> A simple tool that collects massive amouts of links and text data from the internet
 
 TextHarvester is an easy-to-use tool for collecting and crawling urls from the Internet and downloading website content from collected urls into a text file. TextHarvester can be used to efficiently collect a lot of text for general purpose nlp.
+
+TextHarvester is a depth-first algorithm. 
 
 ![](textharvester_logo.PNG)
 
@@ -11,7 +13,7 @@ From Source:
 
 ```sh
 git clone https://github.com/techboy-coder/Textharvester.git
-cd Textharvester && pip install --upgrade -r requirements.txt && pip install .
+cd Textharvester && pip install --upgrade -r requirements.txt && pip install . -q
 ```
 
 ## Usage example
@@ -19,21 +21,54 @@ cd Textharvester && pip install --upgrade -r requirements.txt && pip install .
 ### Crawling and Url Collection
 In the example below, you can see how to quickly collect links from a website. The links will be saved and can be used later to download the content from each link.
 
-![](url-collection-example.PNG)
+```python
+# Import
+import Textharvester.textharvester as th
+crawler = th.TextHarvester(
+    starturls="https://startsite.com",
+    forcedomains=True,
+    alloweddomainslist=["https://en.startsite.com"],
+    depth=4,
+    limittotal=80,
+)
+# Start Harvesting and Collecting Urls
+crawler.harvest(threads=50, write="outfile_urls.txt", overwrite=True, doreturn=False)
+# > This will create a outfile_urls.txt file with all urls it has collected.
+
+```
+
+
 
 ### Download Content
 In the example below, you can see how to quickly download content from all collected urls in the form of a text file.
 
-![](download-content-example.PNG)
+```python
+# Import
+import Textharvester.textharvester as th
+# Initialize Textharvester
+downloader = th.TextHarvester()
+# Start Downloading
+downloader.downloader(
+    infile="collected_links.txt",
+    outfilecontent="content_out.txt",
+    outfiledonelinks="links_downloaded_from.txt",
+    overwritecontent=False,
+    overwritelinks=False,
+    threads=25,
+)
+
+```
+
+**Important for Windows Users: Downloader has to be initialized inside your main loop!**
 
 _For more examples and usage, please refer to the Examples Folder._
 
 ## Purpose and Ethics
 
-TextHarvester is a great tool to harvest text data. Please feel free to use this tool in your project.
+TextHarvester is a great tool to harvest massive amouts of text data. Please feel free to use this tool in your project.
 Please Note: I do not take any responsibility for anything you do with this tool.
 
 
 ## Meta
 
-By techboy-coder – (https://github.com/techboy-coder) – 	techboy.coder@gmail.com
+© 2020 - Techboy-Coder – (https://github.com/techboy-coder)

@@ -161,7 +161,7 @@ class TextHarvester:
 
     # Main function which you will be running
 
-    def harvest(self, threads, write, overwrite: bool, doreturn: bool):
+    def harvest(self, threads=10, write="output.txt", overwrite=True, doreturn=False):
         """Main crawl function
 
         Args:
@@ -180,7 +180,7 @@ class TextHarvester:
         try:
             for cnt in range(depth):
                 print("\n")
-                print("DEPTH CHECK: {}\r".format(cnt), end="")
+                print("\rDEPTH CHECK: {}".format(cnt))
                 print("\n")
                 lnt = len(linkslist)
                 if lnt > limittotal:
