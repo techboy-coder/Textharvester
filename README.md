@@ -17,7 +17,7 @@ TextHarvester is a depth-first algorithm.
 
 **Diagram**
 
-![image-20210107135132263](C:\Users\Shivr\Desktop\Python 3\Anaconda\Python Projects from 2020\Web Data Mining\Textharvester\Diagram)
+![image-20210107135132263](Diagram.png)
 
 ## Installation
 
