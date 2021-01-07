@@ -269,7 +269,7 @@ class TextHarvester:
         all_links = open("{}".format(infile)).read().split("\n")
         all_links = list(set(all_links))
 
-        p = Pool(threads)
+        p = ThreadPool(threads)
         inlist = all_links
         random.shuffle(inlist)
         lnt = len(inlist)
