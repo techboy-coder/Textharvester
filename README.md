@@ -66,6 +66,9 @@ downloader.downloader(
 
 _For more examples and usage, please refer to the Examples Folder._
 
+## Documentation
+Google Colab: https://colab.research.google.com/drive/1vpVg_bQzoKjZNX3-7DMUJ_5zLnnhGIkC?usp=sharing
+
 ## Purpose and Ethics
 
 TextHarvester is a great tool to harvest massive amouts of text data. Please feel free to use this tool in your project.
