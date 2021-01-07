@@ -247,12 +247,12 @@ class TextHarvester:
 
     def downloader(
         self,
-        infile: str,
-        outfilecontent: str,
-        outfiledonelinks: str,
-        overwritecontent: bool,
-        overwritelinks: bool,
-        threads: int,
+        infile="harvested_links.txt",
+        outfilecontent="collected_text_data.txt",
+        outfiledonelinks="origin_urls.txt",
+        overwritecontent=False,
+        overwritelinks=False,
+        threads=20,
     ):
         """[summary]
 
