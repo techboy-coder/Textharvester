@@ -17,7 +17,7 @@ TextHarvester is a depth-first algorithm.
 
 **Diagram**
 
-![Erm? The image is not rendering.](diagram.png)
+![Erm? The image is not rendering.](Diagram.png)
 
 ## Installation
 
