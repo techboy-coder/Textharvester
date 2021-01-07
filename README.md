@@ -25,7 +25,7 @@ From Source:
 
 ```sh
 git clone https://github.com/techboy-coder/Textharvester.git
-cd Textharvester && pip install --upgrade -r -q requirements.txt && pip install . -q
+cd Textharvester && pip install --upgrade -r requirements.txt -q && pip install .
 ```
 
 ## Usage example
