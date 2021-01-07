@@ -62,7 +62,7 @@ downloader.downloader(
 
 ```
 
-**Important for Windows Users: Downloader has to be initialized inside your main loop!**
+**Important for Windows users: The TextHarvester instance must be initialized inside your main loop and the downloader method must run in the main loop!**
 
 _For more examples and usage, please refer to the Examples Folder._
 
