@@ -25,7 +25,7 @@ From Source:
 
 ```sh
 git clone https://github.com/techboy-coder/Textharvester.git
-cd Textharvester && pip install --upgrade -r requirements.txt && pip install . -q
+cd Textharvester && pip install --upgrade -r -q requirements.txt && pip install . -q
 ```
 
 ## Usage example
@@ -34,16 +34,13 @@ cd Textharvester && pip install --upgrade -r requirements.txt && pip install . -
 In the example below, you can see how to quickly collect links from a website. The links will be saved and can be used later to download the content from each link.
 
 ```python
-# Import
 import Textharvester.textharvester as th
 crawler = th.TextHarvester(
     starturls="https://startsite.com",
     forcedomains=True,
     alloweddomainslist=["https://en.startsite.com"],
-    depth=4,
     limittotal=80,
 )
-# Start Harvesting and Collecting Urls
 crawler.harvest(threads=50, write="outfile_urls.txt")
 # > This will create a outfile_urls.txt file with all urls it has collected.
 
@@ -55,15 +52,13 @@ crawler.harvest(threads=50, write="outfile_urls.txt")
 In the example below, you can see how to quickly download content from all collected urls in the form of a text file.
 
 ```python
-# Import
 import Textharvester.textharvester as th
-# Initialize Textharvester
 downloader = th.TextHarvester()
-# Start Downloading
 downloader.downloader(
     infile="outfile_urls.txt",
     threads=25,
 )
+# > Will create to new text files. One with content and one with scraped websites.
 
 ```
 
